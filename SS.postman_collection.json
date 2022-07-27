@@ -1,0 +1,242 @@
+{
+	"info": {
+		"_postman_id": "77d79e0e-56a2-4012-aaab-18e568e6ef52",
+		"name": "SS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Salaries",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/salaries",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"salaries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Salaries Total summary",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/summary",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"summary"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Salaries Contract summary Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/departmentSummary",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"departmentSummary"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Salaries Department wise summary Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/departmentSummary",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"departmentSummary"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Salaries Sub Department wise summary",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/subdepartmentSummary",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"subdepartmentSummary"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Auth check",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic3Jpa2FudGgiLCJpYXQiOjE2NTg5MzM3NzZ9.fQdgFHYLP9nxvam6AqTy2U9YEXArj6ljywZkkzQ2o4k",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Chandini\",\r\n    \"salary\": \"999\",\r\n    \"currency\": \"INR\",\r\n    \"department\": \"Engineering\",\r\n    \"sub_department\": \"Development\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/salaries/Anupam",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"salaries",
+						"Anupam"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Salary",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Chandini\",\r\n    \"salary\": \"999\",\r\n    \"currency\": \"INR\",\r\n    \"department\": \"Engineering\",\r\n    \"sub_department\": \"Development\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/salaries",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"salaries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Login",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"srikanth\",\r\n    \"password\":\"password\"\r\n    \r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
